@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  height: 100vh;
+  line-height: 2;
+  align-items: center;
+  background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/man-carrying_K30S2STXLF.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: ;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.76);
+  color: white;
+}
+
+.container {
+  margin: 5% auto auto auto;
+  width: 50%;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5%;
+  font-weight: 900;
+}
+
+p {
+  font-weight: 900;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 3%;
+}
+
+.yourName {
+  margin-bottom: 5%;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background: black;
+  margin: 5% 0;
+  font-weight: bolder;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+footer {
+  margin: auto;
+  margin-top: 20%;
+  text-align: center;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 680px) {
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  h2 {
+    font-weight: 900;
+    font-size: 1.3rem;
+    width: 80%;
+    text-align: center;
+    margin: 5% auto;
+  }
+
+  footer {
+    margin-top: 55%;
+  }
+}
