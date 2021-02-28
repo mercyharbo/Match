@@ -1,6 +1,8 @@
 document.querySelector("button").addEventListener("click", loveCalculator);
 
 function loveCalculator(e) {
+    //javascript is a synchronous/runtime language, it reads codes line by line, so it is better to prevent default from the beginning
+    e.preventDefault();
 
     // let get the input value the user enter by using the document and value grab the input value 
     let name = document.getElementById("yourName").value;
@@ -19,8 +21,6 @@ function loveCalculator(e) {
         let youMatch = document.getElementById("result").innerHTML = "Oops, sorry you & " + crush + " " + " doesn't match as your compatibility is " 
         + calcMatch + "%. " + "Remember: if you're willing to risk it and see where things end" + " - Hearts are made to be broken anyway."
     }
-
-    e.preventDefault();
 }
 
 
